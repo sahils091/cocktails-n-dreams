@@ -5,7 +5,7 @@ import Drink from "../Drink/Drink";
 
 const Input = () => {
   const [drink, setDrink] = useState(null);
-  const [surprise, setSurprise] = useState({});
+  const [surprise, setSurprise] = useState(null);
 
   const searchByName = (e) => {
     e.preventDefault();
