@@ -14,7 +14,7 @@ const Input = () => {
       .get("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=" + k)
       .then((res) => {
         console.log(res.data.drinks);
-        let data = res.data.drinks;
+        let data = res.data.drinks[0];
         setDrink(data);
       });
     console.log(drink);
