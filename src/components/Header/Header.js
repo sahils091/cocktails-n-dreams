@@ -7,11 +7,14 @@ const Header = () => {
     <header className="header">
       <Container className="p-0" fluid={true}>
         <Navbar className="border-bottom shadow p-3 bg-white rounded" bg="transparent" expand="lg">
-          <Navbar.Brand>Dev Grub</Navbar.Brand>
+          <Navbar.Brand>Dev Cocktails</Navbar.Brand>
 
           <Navbar.Toggle aria-controls="navbar-toggle" className="border-0" />
           <Navbar.Collapse id="navbar-toggle">
             <Nav className="ml-auto">
+            <a className="nav-link" href="#search">
+                Find Your Cocktail
+              </a>
               <a className="nav-link" href="#home">
                 {" "}
                 Home{" "}
@@ -22,9 +25,7 @@ const Header = () => {
               <a className="nav-link" href="#story">
                 Our Story
               </a>
-              <a className="nav-link" href="#contact">
-                Enjoy Your Cocktails!!
-              </a>
+             
             </Nav>
           </Navbar.Collapse>
         </Navbar>
