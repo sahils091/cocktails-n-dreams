@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className="header">
       <Container className="p-0" fluid={true}>
-        <Navbar className="border-bottom shadow p-3 mb-5 bg-white rounded" bg="transparent" expand="lg">
+        <Navbar className="border-bottom shadow p-3 bg-white rounded" bg="transparent" expand="lg">
           <Navbar.Brand>Dev Grub</Navbar.Brand>
 
           <Navbar.Toggle aria-controls="navbar-toggle" className="border-0" />
