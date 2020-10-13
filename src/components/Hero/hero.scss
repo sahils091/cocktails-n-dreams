@@ -14,10 +14,12 @@
         padding-left: 1rem;
         padding-right: 1rem;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        align-items : center;
+        
+
     }
     &__title {
-        color: white;
+        color:$text-color;
+        
     }
 }

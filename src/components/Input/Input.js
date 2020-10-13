@@ -46,7 +46,7 @@ const Input = () => {
             id="search"
           />
 
-          <button type="submit" className="input__btn--name">
+          <button type="submit" className="input__btn input__btn--name">
             Search By Name
           </button>
         </form>
@@ -55,7 +55,7 @@ const Input = () => {
           <h3 className="input__subtitle">Feeling Lucky Punk?</h3>
           <button
             type="button"
-            className="input__btn--surprise"
+            className=" input__btn input__btn--surprise"
             onClick={randomDrink}
           >
             Surprise Me!

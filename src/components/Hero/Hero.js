@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="hero">
       <div className="hero__wrapper">
      
-          <h1 className="hero__title">Enjoy Our Cocktails</h1>
+          <h1 className="hero__title">ENJOY OUR COCKTAILS</h1>
         
       </div>
     </section>
