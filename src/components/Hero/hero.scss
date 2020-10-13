@@ -14,12 +14,16 @@
         padding-left: 1rem;
         padding-right: 1rem;
         display: flex;
-        align-items : center;
+        @include tablet {
+            align-items: center;
+        }
+
         
 
     }
     &__title {
         color:$text-color;
+        margin-top: 1.5rem;
         
     }
 }
