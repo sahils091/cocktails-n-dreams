@@ -1,0 +1,116 @@
+@import "../../partials/variables";
+@import "../../partials/mixins";
+@import "../../partials/typography";
+
+.bar {
+
+  background-color: $page-bg;
+  color: $text-color;
+
+  &__form-wrapper {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    color: $text-color;
+    background-color: $page-bg;
+    @include tablet {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+    @include desktop {
+      padding-left: 3.5rem;
+      padding-right: 3.5rem;
+    }
+  }
+  &__img {
+    background-image: url("../../assets/image2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 26rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    display: flex;
+
+    @include tablet {
+      align-items: center;
+    }
+  }
+  &__title {
+    margin-top: 1.5rem;
+  }
+  &__form {
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__field {
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    color: $label-color;
+    &:active,
+    :focus {
+      outline: none;
+      border: 1px, solid, $label-color;
+    }
+  }
+  &__btn {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    height: 2.5rem;
+    width: 100%;
+    color: $main-bg;
+    border-radius: 0.5rem;
+    background-color: $page-bg;
+    border: 2px dashed $label-color;
+    cursor: pointer;
+    &:hover {
+      border: 1px solid $page-bg;
+      background-color: $label-color;
+    }
+    &:active :focus :visited {
+      outline: none;
+    }
+    @include tablet {
+      width: 15rem;
+    }
+    @include desktop {
+      width: 25rem;
+    }
+    &--surprise {
+      margin-bottom: 2.5rem;
+    }
+  }
+  &__detail-wrapper {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  &__detail {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  &__detail-title {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__detail-subtitle {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__detail-abv {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  &__detail-des {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
