@@ -6,7 +6,7 @@ import "./homepage.scss"
 
 const Homepage = () => {
     return (
-        <div>
+        <div id="home">
             <Header/>
             <Hero/>
             <Input/>

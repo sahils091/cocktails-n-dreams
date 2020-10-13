@@ -15,17 +15,13 @@ const Header = () => {
             <a className="nav-link" href="#search">
                 Find Your Cocktail
               </a>
+              <a className="nav-link" href="#about">
+               Know More About Spirits
+              </a>
               <a className="nav-link" href="#home">
                 {" "}
                 Home{" "}
               </a>
-              <a className="nav-link" href="#about">
-                About Us
-              </a>
-              <a className="nav-link" href="#story">
-                Our Story
-              </a>
-             
             </Nav>
           </Navbar.Collapse>
         </Navbar>
