@@ -3,7 +3,6 @@
 @import "../../partials/typography";
 
 .bar {
-
   background-color: $page-bg;
   color: $text-color;
 
@@ -52,6 +51,8 @@
     border-radius: 0.5rem;
     border: none;
     color: $label-color;
+    padding: 0.625rem;
+    height: 2.5rem;
     &:active,
     :focus {
       outline: none;

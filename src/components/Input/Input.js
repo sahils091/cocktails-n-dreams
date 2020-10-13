@@ -33,37 +33,37 @@ const Input = () => {
   console.log(drink);
   console.log(surprise);
   return (
-      <>
-    <section className="input">
-      <h2 className="input__title">Find Your Favorite Cocktail</h2>
+    <>
+      <section className="input">
+        <h2 className="input__title">Find Your Favorite Cocktail</h2>
 
-      <div className="input__wrapper">
-        <form className="input__form" onSubmit={searchByName}>
-          <input
-            className="input__field"
-            type="text"
-            name="search"
-            id="search"
-          />
+        <div className="input__wrapper">
+          <form className="input__form" onSubmit={searchByName}>
+            <input
+              className="input__field"
+              type="text"
+              name="search"
+              id="search"
+            />
 
-          <button type="submit" className="input__btn input__btn--name">
-            Search By Name
-          </button>
-        </form>
+            <button type="submit" className="input__btn input__btn--name">
+              Search By Name
+            </button>
+          </form>
 
-        <div className="input__subtitle-wrapper">
-          <h3 className="input__subtitle">Feeling Lucky Punk?</h3>
-          <button
-            type="button"
-            className=" input__btn input__btn--surprise"
-            onClick={randomDrink}
-          >
-            Surprise Me!
-          </button>
+          <div className="input__subtitle-wrapper">
+            <h3 className="input__subtitle">Feeling Lucky Punk?</h3>
+            <button
+              type="button"
+              className=" input__btn input__btn--surprise"
+              onClick={randomDrink}
+            >
+              Surprise Me!
+            </button>
+          </div>
         </div>
-      </div>
-    </section>
-    <Drink drink={drink} surprise={surprise}/>
+      </section>
+      <Drink drink={drink} surprise={surprise} />
     </>
   );
 };

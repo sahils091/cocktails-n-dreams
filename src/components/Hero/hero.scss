@@ -2,28 +2,22 @@
 @import "../../partials/mixins";
 @import "../../partials/typography";
 
-
 .hero {
-
-    &__wrapper{
-        background-image: url('../../assets/image1.jpg');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 26rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        display: flex;
-        @include tablet {
-            align-items: center;
-        }
-
-        
-
+  &__wrapper {
+    background-image: url("../../assets/image1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 26rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    @include tablet {
+      align-items: center;
     }
-    &__title {
-        color:$text-color;
-        margin-top: 1.5rem;
-        
-    }
+  }
+  &__title {
+    color: $text-color;
+    margin-top: 1.5rem;
+  }
 }

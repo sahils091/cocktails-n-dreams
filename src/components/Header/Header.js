@@ -1,27 +1,33 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
-import "./header.scss"
+import { Link } from "react-router-dom";
+import "./header.scss";
 
 const Header = () => {
   return (
     <header className="header">
       <Container className="p-0" fluid={true}>
-        <Navbar className="border-bottom shadow p-3 bg-white rounded" bg="transparent" expand="lg">
+        <Navbar
+          className="border-bottom shadow p-3 bg-white rounded"
+          bg="transparent"
+          expand="lg"
+        >
           <Navbar.Brand>Dev Cocktails</Navbar.Brand>
-
           <Navbar.Toggle aria-controls="navbar-toggle" className="border-0" />
+          
           <Navbar.Collapse id="navbar-toggle">
             <Nav className="ml-auto">
-            <a className="nav-link" href="#search">
+              <Link className="nav-link" to="/">
+                Home
+              </Link>
+
+              <Link className="nav-link" to="/bar">
+                Barology
+              </Link>
+
+              <Link className="nav-link" to="/">
                 Find Your Cocktail
-              </a>
-              <a className="nav-link" href="#about">
-               Know More About Spirits
-              </a>
-              <a className="nav-link" href="#home">
-                {" "}
-                Home{" "}
-              </a>
+              </Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>

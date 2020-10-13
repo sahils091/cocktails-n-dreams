@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from '../components/Header/Header';
 import Hero from '../components/Hero/Hero';
 import Input from '../components/Input/Input';
 import "./homepage.scss"
@@ -7,7 +6,6 @@ import "./homepage.scss"
 const Homepage = () => {
     return (
         <div id="home">
-            <Header/>
             <Hero/>
             <Input/>
         </div>

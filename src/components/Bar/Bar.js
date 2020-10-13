@@ -21,7 +21,13 @@ const Bar = () => {
       </div>
       <div className="bar__form-wrapper">
         <form className="bar__form" onSubmit={searchByName}>
-          <input className="bar__field" type="text" name="search" id="search" />
+          <input
+            className="bar__field"
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Pick Your Poison"
+          />
           <button type="submit" className="bar__btn bar__btn--name">
             Search
           </button>
@@ -37,7 +43,7 @@ const Bar = () => {
               <h3 className="bar__detail-subtitle">Tags: {spirit.strType}</h3>
 
               <h3 className="bar__detail-abv">
-                Alcohol Volume (ABV) : {spirit.strABV}
+                Alcohol Volume (ABV) : {spirit.strABV} %
               </h3>
 
               <p className="bar__detail-des">
@@ -53,4 +59,3 @@ const Bar = () => {
 };
 
 export default Bar;
-
