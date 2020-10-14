@@ -41,9 +41,8 @@
     border-radius: 0.5rem;
 
     &:focus {
-     outline: none;
-     border: 2px solid $label-color;
-      
+      outline: none;
+      border: 2px solid $label-color;
     }
     @include tablet {
       width: 30rem;
