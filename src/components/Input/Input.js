@@ -1,11 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./input.scss";
 import Drink from "../Drink/Drink";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Input = () => {
   const [drink, setDrink] = useState(null);
   const [surprise, setSurprise] = useState(null);
+
+  useEffect(() => {
+    Aos.init({
+      duration: 2500,
+    });
+  }, []);
 
   const searchByName = (e) => {
     e.preventDefault();
@@ -13,11 +21,9 @@ const Input = () => {
     axios
       .get("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=" + k)
       .then((res) => {
-        console.log(res.data.drinks);
         let data = res.data.drinks[0];
         setDrink(data);
       });
-    console.log(drink);
   };
 
   const randomDrink = (e) => {
@@ -29,21 +35,25 @@ const Input = () => {
         setSurprise(data);
       });
   };
-
-  console.log(drink);
-  console.log(surprise);
   return (
     <>
       <section className="input">
-        <h2 className="input__title">Find Your Favorite Cocktail</h2>
+        <h2 className="input__title" data-aos="fade-up-right">
+          Find Your Favorite Cocktail
+        </h2>
 
-        <div className="input__wrapper">
-          <form className="input__form" onSubmit={searchByName}>
+        <div className="input__wrapper" data-aos="fade-up">
+          <form
+            className="input__form"
+            data-aos="fade-up-right"
+            onSubmit={searchByName}
+          >
             <input
               className="input__field"
               type="text"
               name="search"
               id="search"
+              placeholder="Pick Your Poison"
             />
 
             <button type="submit" className="input__btn input__btn--name">
@@ -52,7 +62,7 @@ const Input = () => {
           </form>
 
           <div className="input__subtitle-wrapper">
-            <h3 className="input__subtitle">Feeling Lucky Punk?</h3>
+            <h3 className="input__subtitle">Feeling Adventurous?</h3>
             <button
               type="button"
               className=" input__btn input__btn--surprise"
